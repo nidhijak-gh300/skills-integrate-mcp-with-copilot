@@ -13,6 +13,23 @@
     </header>
 
     <main>
+      <section id="auth-container">
+        <h3>Teacher Sign In</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Teacher username:</label>
+            <input id="username" name="username" autocomplete="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+          </div>
+          <button type="submit">Sign In</button>
+        </form>
+        <button id="logout-button" class="hidden" type="button">Sign Out</button>
+        <p id="auth-message" role="status"></p>
+      </section>
+
       <section id="activities-container">
         <h3>Available Activities</h3>
         <div id="activities-list">
